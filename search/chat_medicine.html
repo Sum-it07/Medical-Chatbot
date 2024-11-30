@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Medical chatbot to assist with disease-related queries."
+    />
+    <title>Medical Chatbot</title>
+
+    <!-- Favicon for professional touch -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Link to Google Fonts for better typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header with Go Back button and Category Buttons -->
+    <header>
+      <div class="header-container">
+        <!-- Go Back Button -->
+        <button onclick="window.history.back()" class="back-btn">
+          &#8592; Go Back
+        </button>
+
+        <!-- Category Selection Buttons -->
+        <div class="category-buttons">
+          <button onclick="window.location.href='chat_disease.html'">
+            Disease Name
+          </button>
+          <button onclick="window.location.href='chat_symptoms.html'">
+            Symptoms
+          </button>
+          <button onclick="window.location.href='chat_medicine.html'">
+            Medicine Name
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat container -->
+    <div id="chat-container">
+      <div id="chat-window">
+        <!-- Example Bot Message with Avatar -->
+        <div class="bot-message">
+          <img src="med-bot.png" alt="Bot Avatar" class="avatar" />
+          <p>
+            Hi, I can assist you with information about medications. Please type
+            the name of the medication you want to learn about.
+          </p>
+        </div>
+      </div>
+      <div id="typing-indicator" style="display: none">Bot is typing...</div>
+    </div>
+
+    <!-- User Input Box (Sticky at bottom) -->
+    <div id="input-container">
+      <input type="text" id="user-input" placeholder="Type medicine name..." />
+      <button id="send-button">Send</button>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="chat_medicine.js"></script>
+
+    <!-- Automatically focus on the input field when the page loads -->
+    <script>
+      window.onload = function () {
+        document.getElementById("user-input").focus();
+      };
+    </script>
+  </body>
+</html>
