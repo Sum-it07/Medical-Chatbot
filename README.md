@@ -36,15 +36,15 @@ This project employs a **rule-based approach**:
 - Adding an AI-based system for adaptive responses and learning capabilities.  
 - Extending the chatbot to include voice interaction and multi-language support.  
 
-## How to Run
+# How to Run
 To set up and run the Medical Chatbot, follow these steps:
 
-# Step 1: Clone the Repository
+## Step 1: Clone the Repository
 git clone https://github.com/yourusername/medical-chatbot.git
 cd medical-chatbot
 
-# Step 2: Open the Application
-# Open the `index.html` file in your preferred browser.
+## Step 2: Open the Application
+## Open the `index.html` file in your preferred browser.
 
-# Step 3: Interact with the Chatbot
-# Type your queries into the chat interface and get instant responses!
+## Step 3: Interact with the Chatbot
+## Type your queries into the chat interface and get instant responses!
